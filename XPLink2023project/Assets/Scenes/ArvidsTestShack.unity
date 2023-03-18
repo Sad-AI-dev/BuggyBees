@@ -6195,46 +6195,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1927269163}
-    - target: {fileID: 1500488446860056601, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetSelected
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500488446860056601, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlacementManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 5465815076251250889, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1927269163}
-    - target: {fileID: 5465815076251250889, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetSelected
-      objectReference: {fileID: 0}
-    - target: {fileID: 5465815076251250889, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlacementManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5465815076718332272, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5465815076718332272, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 599fefa2ebcbe4f46b0986100c7a29d2, type: 3}
-    - target: {fileID: 5465815076718332272, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5465815076718332272, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5465815076718332272, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5465815077080142200, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
       propertyPath: m_Name
       value: UI
@@ -6321,10 +6285,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5465815077080142204, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832569255142057238, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
