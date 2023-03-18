@@ -6,6 +6,7 @@ public abstract class Tower : MonoBehaviour
 {
     [System.Serializable]
     public class Stats {
+        public int price = 1;
         public float range = 1f;
         public float damage = 1f;
         public float attackSpeed = 20f; //expressed in attack per minute

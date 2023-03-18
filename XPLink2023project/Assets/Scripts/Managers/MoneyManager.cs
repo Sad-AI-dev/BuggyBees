@@ -22,6 +22,7 @@ public class MoneyManager : MonoBehaviour
     public void GainMoney(int moneyToAdd)
     {
         money += moneyToAdd;
+        onMoneyChanged?.Invoke(money);
     }
 
     public bool MoneyCheck(int amount)
@@ -31,5 +32,6 @@ public class MoneyManager : MonoBehaviour
     public void PayMoney(int moneyToPay)
     {
         money -= moneyToPay;
+        onMoneyChanged?.Invoke(money);
     }
 }
