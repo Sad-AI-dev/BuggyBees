@@ -51,4 +51,9 @@ public class Projectile : MonoBehaviour
     {
         Destroy(gameObject); // remove redundant projectiles
     }
+
+    private void OnDestroy()
+    {
+        target.onEnemyDestroy -= OnEnemyDestroy;
+    }
 }
