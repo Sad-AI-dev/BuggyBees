@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Buildable : Selectable
 {
+    private void Start()
+    {
+        base.Start();
+    }
+
     public override void BeginSelect()
     {
         base.BeginSelect();

@@ -385,7 +385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1257298337320121554, guid: b5caa2c9d2c59aa4e8e985f2104945b5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.03840247
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1257298337320121554, guid: b5caa2c9d2c59aa4e8e985f2104945b5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -485,6 +485,10 @@ PrefabInstance:
       propertyPath: centerPoint
       value: 
       objectReference: {fileID: 1126538951}
+    - target: {fileID: 4539105364220719600, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: money
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4539105364913738142, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
       propertyPath: m_Name
       value: Managers

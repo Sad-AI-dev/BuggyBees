@@ -13,6 +13,8 @@ public abstract class Tower : MonoBehaviour
     }
 
     public Stats stats;
+    [Header("refs")]
+    public GameObject rangeShower;
 
     //external components
     private CircleCollider2D coll;
@@ -22,8 +24,13 @@ public abstract class Tower : MonoBehaviour
 
     private void Start()
     {
+        //setup collision
         coll = GetComponent<CircleCollider2D>();
         coll.radius = stats.range;
+        //setup range shower
+        rangeShower.transform.localScale = new Vector3(stats.range * 2f, stats.range * 2f, 1f);
+        rangeShower.SetActive(false);
+        //setup vars
         enemiesInRange = new();
     }
 
@@ -75,5 +82,15 @@ public abstract class Tower : MonoBehaviour
     private void StopRoutineCheck()
     {
         if (enemiesInRange.Count == 0) { StopCoroutine(attackRoutine); }
+    }
+
+    //============== Handle show range =================
+    public void ShowTowerRange()
+    {
+        rangeShower.SetActive(true);
+    }
+    public void HideTowerRange()
+    {
+        rangeShower.SetActive(false);
     }
 }

@@ -10,9 +10,9 @@ public class Selectable : MonoBehaviour
     [SerializeField] private Sprite selectedSprite;
 
     private Sprite baseSprite;
-    private bool selected = false;
+    protected bool selected = false;
 
-    private void Start()
+    public void Start()
     {
         baseSprite = highlighter.sprite;
     }
