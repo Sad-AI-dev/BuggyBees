@@ -12,7 +12,11 @@ public class Selectable : MonoBehaviour
     private Sprite baseSprite;
     protected bool selected = false;
 
-    public void Start()
+    private void Start()
+    {
+        Initialize();
+    }
+    public void Initialize()
     {
         baseSprite = highlighter.sprite;
     }

@@ -6,7 +6,7 @@ public class Buildable : Selectable
 {
     private void Start()
     {
-        base.Start();
+        base.Initialize();
     }
 
     public override void BeginSelect()

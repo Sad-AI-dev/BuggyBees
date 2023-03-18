@@ -10,7 +10,7 @@ public class TowerSelectable : Selectable
     private void Start()
     {
         tower = GetComponent<Tower>();
-        base.Start();
+        base.Initialize();
     }
 
     public override void BeginHover()
