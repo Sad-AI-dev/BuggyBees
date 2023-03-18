@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998961310766548489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.66, y: 5.79, z: 0}
+  m_LocalPosition: {x: -7.15, y: 6.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e2f8c7091b0c040b07032409d2c74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  money: 5
 --- !u!1 &4539105364911661770
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 4539105364911661771}
   - component: {fileID: 4632170150690755361}
   - component: {fileID: 3343547367707614346}
+  - component: {fileID: 1729106472494761803}
   m_Layer: 0
   m_Name: WaveSpawner
   m_TagString: Untagged
@@ -209,8 +210,8 @@ MonoBehaviour:
   budgetGain: 1
   GainRampup: 1
   GainRampupFrequency: 2
-  activateMode: 1
-  ActivateIntervalTime: 5
+  activateMode: 0
+  ActivateIntervalTime: 0
   saveMode: 0
   saveChance: 0
   saveInterval: 0
@@ -272,6 +273,59 @@ MonoBehaviour:
       - option: {fileID: 5323524985275163158}
         chance: 1
   pointHolder: {fileID: 2638341186507493111}
+--- !u!114 &1729106472494761803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539105364911661770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf48ce93fade67a4188422a9351fc6b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intervalTimers:
+    dictionary:
+    - key: SpawnWave
+      value:
+        activateOnStart: 1
+        timerLength: 5
+        repeatCount: -1
+        timerLengthMode: 0
+        minTimerLength: 0
+        maxTimerLength: 0
+        onTimerActivated:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 4632170150690755361}
+              m_TargetAssemblyTypeName: DevKit.CostBasedActivator, arvid-dev.dev-kit
+              m_MethodName: Activate
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 0}
+              m_TargetAssemblyTypeName: DevKit.CostBasedActivator, arvid-dev.dev-kit
+              m_MethodName: 
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: 
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        onTimerEnded:
+          m_PersistentCalls:
+            m_Calls: []
+        oldMinTimer: 0
 --- !u!1 &4539105364913738142
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +431,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5507442182317616900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.95, y: -6.94, z: 0}
+  m_LocalPosition: {x: 7.09, y: -7.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -408,7 +462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5569268280798063952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.85, y: -0.02, z: 0}
+  m_LocalPosition: {x: -11.2, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -439,7 +493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5913881869318608901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.13, y: -6.77, z: 0}
+  m_LocalPosition: {x: -7.31, y: -7.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -470,7 +524,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8376358865463590030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.33, y: -0.62, z: 0}
+  m_LocalPosition: {x: 10.93, y: -0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -501,7 +555,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9196502802338716452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.67, y: 6, z: 0}
+  m_LocalPosition: {x: 6.86, y: 6.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

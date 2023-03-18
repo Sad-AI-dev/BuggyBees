@@ -34,4 +34,9 @@ public class MoneyManager : MonoBehaviour
         money -= moneyToPay;
         onMoneyChanged?.Invoke(money);
     }
+
+    public int GetCurrentMoney()
+    {
+        return money;
+    }
 }
