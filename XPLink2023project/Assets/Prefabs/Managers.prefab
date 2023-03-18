@@ -782,9 +782,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4539105364911661771}
-  - component: {fileID: 4632170150690755361}
-  - component: {fileID: 3343547367707614346}
   - component: {fileID: 1729106472494761803}
+  - component: {fileID: 4632170150690755361}
+  - component: {fileID: 8312371576929887496}
   m_Layer: 0
   m_Name: WaveSpawner
   m_TagString: Untagged
@@ -808,76 +808,6 @@ Transform:
   m_Father: {fileID: 4539105364913738143}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4632170150690755361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4539105364911661770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7d855c52a1fff419907e7929e696df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  budget: 1
-  activateOnStart: 1
-  budgetGain: 1
-  GainRampup: 1
-  GainRampupFrequency: 2
-  activateMode: 0
-  ActivateIntervalTime: 0
-  saveMode: 0
-  saveChance: 0
-  saveInterval: 0
-  minRandInterval: 0
-  maxRandInterval: 0
-  minSavePercent: 0
-  maxSavePercent: 0
-  options:
-  - name: Test
-    price: 1
-    onSelect:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 3343547367707614346}
-          m_TargetAssemblyTypeName: DevKit.ObjectSpawner, arvid-dev.dev-kit
-          m_MethodName: SpawnObjectAtPrefabIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    initialized: 1
---- !u!114 &3343547367707614346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4539105364911661770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18694cb085f45dd46a8f339d8a3e9a39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabs:
-    selectMode: 0
-    options:
-      chances:
-      - option: {fileID: 2470239587277422873, guid: f3584da4f81d81342beeb51ecac3319c, type: 3}
-        chance: 0
-  spawnPoints:
-    selectMode: 0
-    options:
-      chances:
-      - option: {fileID: 5429293753267572164}
-        chance: 1
-  pointHolder: {fileID: 2638341186507493111}
 --- !u!114 &1729106472494761803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,6 +861,65 @@ MonoBehaviour:
           m_PersistentCalls:
             m_Calls: []
         oldMinTimer: 0
+--- !u!114 &4632170150690755361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539105364911661770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7d855c52a1fff419907e7929e696df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  budget: 1
+  activateOnStart: 1
+  budgetGain: 1
+  GainRampup: 1
+  GainRampupFrequency: 2
+  activateMode: 0
+  ActivateIntervalTime: 0
+  saveMode: 0
+  saveChance: 0
+  saveInterval: 0
+  minRandInterval: 0
+  maxRandInterval: 0
+  minSavePercent: 0
+  maxSavePercent: 0
+  options:
+  - name: Test
+    price: 1
+    onSelect:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8312371576929887496}
+          m_TargetAssemblyTypeName: EnemySpawner, Assembly-CSharp
+          m_MethodName: SpawnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2470239587277422873, guid: f3584da4f81d81342beeb51ecac3319c, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    initialized: 1
+--- !u!114 &8312371576929887496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539105364911661770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161908582493fab419371a7b47ff53f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 5429293753267572164}
+  offsetRange: {x: 2, y: 2}
 --- !u!1 &4539105364913738142
 GameObject:
   m_ObjectHideFlags: 0
