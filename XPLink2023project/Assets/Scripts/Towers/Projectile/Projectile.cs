@@ -5,8 +5,8 @@ using DevKit;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 1f;
-    [SerializeField] private float damage = 1f;
+    [SerializeField] protected float moveSpeed = 1f;
+    [SerializeField] protected float damage = 1f;
 
     private Enemy target;
     private Rigidbody2D rb;
@@ -22,25 +22,35 @@ public class Projectile : MonoBehaviour
         e.onEnemyDestroy += OnEnemyDestroy;
     }
 
+    //============ movement ===============
     private void FixedUpdate()
     {
         Move();
     }
 
-    private void Move()
+    protected virtual void Move()
     {
         rb.velocity = (target.transform.position - transform.position).normalized * (moveSpeed * 100 * Time.deltaTime);
     }
 
+    //=============== handle collision ================
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy")) {
-            target.onEnemyDestroy -= OnEnemyDestroy;
-            collision.GetComponent<HealthManager>().TakeDamage(damage);
-            StartCoroutine(DestroyCo());
+            OnHitEnemy(collision);
+            HandleEnemyHit();
         }
     }
-    private IEnumerator DestroyCo()
+    protected virtual void OnHitEnemy(Collider2D collision)
+    {
+        collision.GetComponent<HealthManager>().TakeDamage(damage);
+    }
+    private void HandleEnemyHit()
+    {
+        target.onEnemyDestroy -= OnEnemyDestroy;
+        StartCoroutine(DestroyCo());
+    }
+    protected IEnumerator DestroyCo()
     {
         yield return null;
         Destroy(gameObject);
