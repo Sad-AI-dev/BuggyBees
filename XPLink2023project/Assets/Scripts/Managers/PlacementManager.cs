@@ -58,5 +58,6 @@ public class PlacementManager : MonoBehaviour
         tower.transform.position = preview.transform.position;
         //pay
         MoneyManager.instance.PayMoney(tower.GetComponent<Tower>().stats.price);
+        RemoveSelected();
     }
 }

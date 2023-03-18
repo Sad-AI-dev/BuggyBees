@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2470239587277422876}
   - component: {fileID: 2470239587277422872}
   - component: {fileID: 2470239587277422877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -142,6 +142,7 @@ MonoBehaviour:
     moveSpeed: 1
     damage: 1
     heldMoney: 1
+  pickupDrop: {fileID: 4022605648524430363, guid: 36f5d117366ff7640b15537b99b038b4, type: 3}
 --- !u!114 &2470239587277422877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,7 +205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7717244993320808628}
   - component: {fileID: 1171759030476976084}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6849281279906081443}
   - component: {fileID: 2096798215881338775}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BarHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

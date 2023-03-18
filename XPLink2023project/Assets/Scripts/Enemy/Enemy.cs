@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
         public int heldMoney = 1;
     }
     public Stats stats;
+    [SerializeField] private GameObject pickupDrop;
 
     //external components
     private Rigidbody2D rb;
@@ -70,7 +71,8 @@ public class Enemy : MonoBehaviour
 
     public void KillEnemy()
     {
-        MoneyManager.instance.GainMoney(stats.heldMoney);
+        Transform t = Instantiate(pickupDrop).transform;
+        t.position = transform.position;
     }
 
     //==================== Custom Sort ===================

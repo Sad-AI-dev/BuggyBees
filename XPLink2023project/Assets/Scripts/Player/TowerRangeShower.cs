@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class TowerRangeShower : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Tower") && !collision.isTrigger) {
+            collision.GetComponent<Tower>().ShowTowerRange();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Tower") && !collision.isTrigger) {
+            collision.GetComponent<Tower>().HideTowerRange();
+        }
     }
 }
