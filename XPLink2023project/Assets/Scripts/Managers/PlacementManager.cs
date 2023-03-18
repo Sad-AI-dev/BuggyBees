@@ -40,13 +40,15 @@ public class PlacementManager : MonoBehaviour
     //============= attempt place ==================
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && preview.IsValid && !EventSystem.current.IsPointerOverGameObject()) {
-            preview.gameObject.SetActive(false);
-            //build tower
-            BuildTower();
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape)) {
-            RemoveSelected();
+        if (currentSelected) {
+            if (Input.GetMouseButtonDown(0) && preview.IsValid && !EventSystem.current.IsPointerOverGameObject()) {
+                preview.gameObject.SetActive(false);
+                //build tower
+                BuildTower();
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape)) {
+                RemoveSelected();
+            }
         }
     }
 
