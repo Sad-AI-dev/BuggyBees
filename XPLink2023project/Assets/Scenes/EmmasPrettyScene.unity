@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats:
+    price: 1
     range: 5
     damage: 1
     attackSpeed: 20
