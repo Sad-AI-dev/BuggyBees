@@ -28,10 +28,6 @@ public class PriceButton : MonoBehaviour
         if (MoneyManager.instance.MoneyCheck(watchPrize)) { Enable(); }
         else { Disable(); }
     }
-    private void OnEnable()
-    {
-        CheckPrice();
-    }
 
     //========= handle state changes ===========
     private void Enable()

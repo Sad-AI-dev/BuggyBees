@@ -18,25 +18,46 @@ public class Enemy : MonoBehaviour
     //external components
     private Rigidbody2D rb;
     //vars
-    private Transform targetPoint;
+    private List<Transform> path;
+    public int targetIndex { get; private set; }
+
     [HideInInspector] public Action<Enemy> onEnemyDestroy;
 
     private void Start()
     {
-        targetPoint = PathManager.instance.centerPoint;
-        transform.rotation = LookAt2D.LookAtTransform(transform, targetPoint);
+        path = PathManager.instance.path;
         //get rigidbody
         rb = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
     {
+        UpdateRotation();
         Move();
     }
 
+    private void UpdateRotation()
+    {
+        transform.rotation = LookAt2D.LookAtTransform(transform, path[targetIndex]);
+        if (transform.position.x > path[targetIndex].position.x) {
+            transform.Rotate(new Vector3(0, 0, 180f));
+        }
+    }
     private void Move()
     {
-        rb.velocity = (targetPoint.position - transform.position).normalized * (stats.moveSpeed * 100 * Time.deltaTime);
+        Vector3 diff = path[targetIndex].position - transform.position;
+        rb.velocity = diff.normalized * (stats.moveSpeed * 100 * Time.deltaTime);
+        if (diff.magnitude < 0.1f) {
+            OnReachPoint();
+        }
+    }
+    //================= Handle Reach End ===============
+    private void OnReachPoint()
+    {
+        transform.position = path[targetIndex].position;
+        if (targetIndex < path.Count) {
+            targetIndex++;
+        }
     }
 
     //===================== Handle Death =================
@@ -55,6 +76,12 @@ public class Enemy : MonoBehaviour
     //==================== Custom Sort ===================
     public int ProgressSort(Enemy other)
     {
-        return (targetPoint.position - transform.position).magnitude.CompareTo((targetPoint.position - other.transform.position).magnitude);
+        if (other.targetIndex == targetIndex) {
+            Vector3 pathPoint = path[targetIndex].position;
+            return (pathPoint - transform.position).magnitude.CompareTo((pathPoint - other.transform.position).magnitude);
+        }
+        else {
+            return targetIndex.CompareTo(other.targetIndex);
+        }
     }
 }

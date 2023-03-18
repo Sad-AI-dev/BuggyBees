@@ -16,5 +16,14 @@ public class PathManager : MonoBehaviour
 
     public static PathManager instance;
 
-    public Transform centerPoint;
+    [SerializeField] private Transform pathHolder;
+    public List<Transform> path;
+
+    private void Start()
+    {
+        foreach (Transform child in pathHolder)
+        {
+            path.Add(child);
+        }
+    }
 }

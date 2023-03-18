@@ -19,7 +19,6 @@ public class Projectile : MonoBehaviour
     public void SetupTarget(Enemy e)
     {
         target = e;
-        e.onEnemyDestroy += OnEnemyDestroy;
     }
 
     //============ movement ===============
@@ -30,7 +29,9 @@ public class Projectile : MonoBehaviour
 
     protected virtual void Move()
     {
-        rb.velocity = (target.transform.position - transform.position).normalized * (moveSpeed * 100 * Time.deltaTime);
+        if (target != null) {
+            rb.velocity = (target.transform.position - transform.position).normalized * (moveSpeed * 100 * Time.deltaTime);
+        }
     }
 
     //=============== handle collision ================
@@ -47,23 +48,11 @@ public class Projectile : MonoBehaviour
     }
     private void HandleEnemyHit()
     {
-        target.onEnemyDestroy -= OnEnemyDestroy;
         StartCoroutine(DestroyCo());
     }
     protected IEnumerator DestroyCo()
     {
         yield return null;
         Destroy(gameObject);
-    }
-
-    //============ handle enemy death ================
-    private void OnEnemyDestroy(Enemy e)
-    {
-        Destroy(gameObject); // remove redundant projectiles
-    }
-
-    private void OnDestroy()
-    {
-        target.onEnemyDestroy -= OnEnemyDestroy;
     }
 }
