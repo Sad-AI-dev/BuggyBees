@@ -221,7 +221,7 @@ MonoBehaviour:
     price: 1
     range: 5
     damage: 1
-    attackSpeed: 20
+    attackSpeed: 30
   rangeShower: {fileID: 482981472835635611}
   projPrefab: {fileID: 7904630852600710201, guid: 14b9f6dfab60b424daaace6ed801da4a, type: 3}
 --- !u!114 &-7498899546947228065

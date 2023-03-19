@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &169257780 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8312371576929887496, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+  m_PrefabInstance: {fileID: 2018710499}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161908582493fab419371a7b47ff53f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &235388082
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +286,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1099,6 +1110,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1729106472494761803, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: intervalTimers.dictionary.Array.data[0].value.timerLength
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729106472494761803, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
       propertyPath: intervalTimers.dictionary.Array.data[0].value.onTimerActivated.m_PersistentCalls.m_Calls.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -1181,6 +1196,110 @@ PrefabInstance:
     - target: {fileID: 4539105364913738143, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: budget
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: saveMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: GainRampup
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: budgetGain
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: saveChance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: maxSavePercent
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: minSavePercent
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[1].name
+      value: Enemy 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].name
+      value: Byte
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[1].price
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].price
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].initialized
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].onSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[0].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 169257780}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[1].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 169257780}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 169257780}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[0].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpawnObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[1].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpawnObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpawnObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnemySpawner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[1].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2470239587277422873, guid: cd6038f3ff68c1740bd7cdb790e8ad1b, type: 3}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 6594600791926468089, guid: 1c628cdf80b91434ca358d814f7272cb, type: 3}
+    - target: {fileID: 4632170150690755361, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: options.Array.data[2].onSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}

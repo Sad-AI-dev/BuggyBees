@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats:
-    moveSpeed: 1.2
+    moveSpeed: 1.5
     damage: 1
   pickupDrop: {fileID: 4022605648524430363, guid: 36f5d117366ff7640b15537b99b038b4, type: 3}
   slowed: 0
