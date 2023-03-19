@@ -1,5 +1,162 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &788536309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 788536310}
+  - component: {fileID: 788536312}
+  - component: {fileID: 788536311}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &788536310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788536309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4539105364913738143}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &788536312
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788536309}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e9fd80216ad15d34395b97e3d42c87c5, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &788536311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788536309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6ee8b14adc97440baf4df73f7c6634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracks:
+    dictionary:
+    - key: gameplay
+      value:
+        clip: {fileID: 8300000, guid: e9fd80216ad15d34395b97e3d42c87c5, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.2
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
+  muteTime: 0.5
+  transitionTime: 1
 --- !u!1 &647737288211734621
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +1045,7 @@ MonoBehaviour:
   minSavePercent: 0
   maxSavePercent: 0
   options:
-  - name: Test
+  - name: Enemy
     price: 1
     onSelect:
       m_PersistentCalls:
@@ -899,6 +1056,24 @@ MonoBehaviour:
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 2470239587277422873, guid: f3584da4f81d81342beeb51ecac3319c, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    initialized: 1
+  - name: Byte
+    price: 3
+    onSelect:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8312371576929887496}
+          m_TargetAssemblyTypeName: EnemySpawner, Assembly-CSharp
+          m_MethodName: SpawnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6594600791926468089, guid: 1c628cdf80b91434ca358d814f7272cb, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -953,6 +1128,7 @@ Transform:
   - {fileID: 4539105364911661771}
   - {fileID: 2476055580357859179}
   - {fileID: 2423453735518005762}
+  - {fileID: 788536310}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1094,7 +1270,127 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-    dictionary: []
+    dictionary:
+    - key: HoverButton
+      value:
+        clip: {fileID: 8300000, guid: c73fb598b72c8a14fb4b448294b3fd8d, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.3
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
+    - key: ClickButton
+      value:
+        clip: {fileID: 8300000, guid: 8a2002d8d66699f4997cfca627c04deb, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.3
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
+    - key: Footsteps
+      value:
+        clip: {fileID: 8300000, guid: 7b04f50c888b9114f9184cc520ce39e9, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.2
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
+    - key: GameOver
+      value:
+        clip: {fileID: 8300000, guid: b41f9ace1ee68c945b13a31e1f2ebccb, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.3
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
+    - key: GameStart
+      value:
+        clip: {fileID: 8300000, guid: ae0c8c67c0dce614588a2c6357af875e, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.3
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
+    - key: LostHealth
+      value:
+        clip: {fileID: 8300000, guid: b66b3824d2e4ab54a9a069ef81941f58, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.6
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
+    - key: NewWave
+      value:
+        clip: {fileID: 8300000, guid: 8cf0c1958860adb4c9e9838a21d9c91d, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.3
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
+    - key: PickUp
+      value:
+        clip: {fileID: 8300000, guid: 284ee9335e272cb4faf3b49b2816bb77, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.3
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
+    - key: PlaceTower
+      value:
+        clip: {fileID: 8300000, guid: 862fbab7b6e38a14aa81fca28bf8ae21, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.3
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
+    - key: Shoot
+      value:
+        clip: {fileID: 8300000, guid: f742b77f3992c5541a5cd61d6223c95b, type: 3}
+        output: {fileID: 0}
+        priority: 128
+        volume: 0.2
+        pitch: 1
+        bypassEffects: 0
+        bypassListenerEffects: 0
+        bypassReverbZones: 0
+        source: {fileID: 0}
+        setBaseValues: 1
 --- !u!1 &7677822078988500163
 GameObject:
   m_ObjectHideFlags: 0
