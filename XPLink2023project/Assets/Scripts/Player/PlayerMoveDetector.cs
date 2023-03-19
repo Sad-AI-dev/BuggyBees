@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class PlayerMoveDetector : MonoBehaviour
 {
+    public Animator animator;
+    public Rigidbody2D rb;
     public bool isMoving;
-    private Vector3 lastPos;
-
-    private void Start()
-    {
-        lastPos = transform.position;
-    }
 
     private void LateUpdate()
     {
-        isMoving = Vector3.Distance(lastPos, transform.position) > 0.01f;
-        lastPos = transform.position;
+        isMoving = rb.velocity.magnitude > 0.1f;
+
+        animator.SetBool("isWalking", isMoving);
     }
 }
