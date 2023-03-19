@@ -15,6 +15,7 @@ public class WaveLabel : MonoBehaviour
         baseString = label.text;
         wave = 0;
         UpdateLabel();
+        ResetScore();
     }
 
     public void OnSpawnNextWave()
@@ -26,5 +27,15 @@ public class WaveLabel : MonoBehaviour
     private void UpdateLabel()
     {
         label.text = baseString + wave;
+    }
+
+    //======== Score ============
+    private void ResetScore()
+    {
+        PlayerPrefs.SetInt("Score", 0);
+    }
+    public void SaveScore()
+    {
+        PlayerPrefs.SetInt("Score", wave);
     }
 }

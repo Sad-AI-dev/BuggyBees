@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 4f4ea5eb8c80da045b79de0d021129f4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7e4e19ee6bc8283428873f8b301a20be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -141,8 +141,8 @@ MonoBehaviour:
   stats:
     moveSpeed: 1
     damage: 1
-    heldMoney: 1
   pickupDrop: {fileID: 4022605648524430363, guid: 36f5d117366ff7640b15537b99b038b4, type: 3}
+  slowed: 0
 --- !u!114 &2470239587277422877
 MonoBehaviour:
   m_ObjectHideFlags: 0
