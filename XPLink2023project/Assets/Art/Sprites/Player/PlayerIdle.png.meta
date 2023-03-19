@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3998aa58e21f83b48aa1eaea09a7c7ba
+guid: 35c23b95ec553f14ebf06f619d14bdfc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,41 +100,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BeeWalk_0
+      name: PlayerIdle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 52
-        height: 70
+        width: 53
+        height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,71 +118,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ed7633b244fb174ca84e2c4e9d58fff
-      internalID: -1746812347
+      spriteID: 3d2ff930669203f48bfe70f6528ef610
+      internalID: 383173444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeeWalk_1
+      name: PlayerIdle_1
       rect:
         serializedVersion: 2
         x: 52
         y: 0
-        width: 53
-        height: 70
-      alignment: 0
+        width: 49
+        height: 63
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec478e5639c0cc44eb6c03b7c0f3a2b7
-      internalID: 83380639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BeeWalk_2
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 0
-        width: 52
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af8ecf6518f611b489cb77a9e0dd4516
-      internalID: -1921587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BeeWalk_3
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 0
-        width: 53
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 354b5d32b2d171542b122f5610c8336c
-      internalID: 1726746823
+      spriteID: 175a630793a6fa447993a96903f3aa79
+      internalID: 827406071
       vertices: []
       indices: 
       edges: []
@@ -215,17 +149,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BeeWalk_2: -1921587
-      BeeWalk_1: 83380639
-      BeeWalk_3: 1726746823
-      BeeWalk_0: -1746812347
+      PlayerIdle_0: 383173444
+      PlayerIdle_1: 827406071
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
