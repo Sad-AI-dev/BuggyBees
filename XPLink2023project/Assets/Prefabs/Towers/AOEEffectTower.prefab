@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2351482677613541769}
   - component: {fileID: 454576989406097433}
   - component: {fileID: 8977583236023631228}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AOEEffectTower
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8161063562959504670}
   - component: {fileID: 245054499606522798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RangeShower
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2837863714718721543}
   - component: {fileID: 6144433633671907511}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RangeShower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8539342867925162640}
   - component: {fileID: 5897035528864278633}
   - component: {fileID: -2081355091103906000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MoneyTower
   m_TagString: Tower
   m_Icon: {fileID: 0}
