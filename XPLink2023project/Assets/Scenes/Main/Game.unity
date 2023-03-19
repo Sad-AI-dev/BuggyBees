@@ -1185,6 +1185,10 @@ PrefabInstance:
       propertyPath: intervalTimers.dictionary.Array.data[0].value.onTimerActivated.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4539105364220719600, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
+      propertyPath: money
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4539105364913738142, guid: 1d9ba1eedbfb1e049b0bf68ec78c5e20, type: 3}
       propertyPath: m_Name
       value: Managers

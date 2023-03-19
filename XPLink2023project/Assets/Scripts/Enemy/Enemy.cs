@@ -71,8 +71,10 @@ public class Enemy : MonoBehaviour
 
     public void KillEnemy()
     {
-        Transform t = Instantiate(pickupDrop).transform;
-        t.position = transform.position;
+        if (UnityEngine.Random.Range(0f, 1f) > 0.75f) {
+            Transform t = Instantiate(pickupDrop).transform;
+            t.position = transform.position;
+        }
     }
 
     //==================== Custom Sort ===================
