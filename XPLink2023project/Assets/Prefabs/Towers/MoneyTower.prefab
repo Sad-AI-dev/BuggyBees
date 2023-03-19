@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 5795298517648905075}
   - component: {fileID: 8539342867925162640}
   - component: {fileID: 5897035528864278633}
+  - component: {fileID: -2081355091103906000}
   m_Layer: 0
   m_Name: MoneyTower
   m_TagString: Tower
@@ -223,3 +224,30 @@ MonoBehaviour:
     attackSpeed: 5
   rangeShower: {fileID: 482981472835635611}
   moneyToGenerate: 5
+--- !u!114 &-2081355091103906000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795298517648905087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecaa5be5b59ce534c80cf2d1854198b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -2081355091103906000}
+        m_TargetAssemblyTypeName: OnStart, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PlaceTower
+          m_BoolArgument: 0
+        m_CallState: 2

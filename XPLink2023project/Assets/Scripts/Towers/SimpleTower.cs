@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DevKit;
 
 public class SimpleTower : Tower
 {
@@ -14,6 +15,7 @@ public class SimpleTower : Tower
     protected override void Activate()
     {
         GameObject gO = Instantiate(projPrefab);
+        AudioManager.instance.PlayOneShot("Shoot");
         gO.GetComponent<Projectile>().SetupTarget(enemiesInRange[0]);
         gO.transform.position = transform.position;
     }

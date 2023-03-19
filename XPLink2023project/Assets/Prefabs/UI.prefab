@@ -295,6 +295,7 @@ GameObject:
   - component: {fileID: 6318301239171544575}
   - component: {fileID: 4311624693867441084}
   - component: {fileID: 407892945354303550}
+  - component: {fileID: 6456038382762165601}
   m_Layer: 5
   m_Name: ToMainMenu
   m_TagString: Untagged
@@ -429,6 +430,47 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DevKit.AudioManager, arvid-dev.dev-kit
+        m_MethodName: PlayOneShot
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ButtonClick
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6456038382762165601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678539815128211578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DevKit.AudioManager, arvid-dev.dev-kit
+          m_MethodName: PlayOneShot
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: ButtonHover
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1907112687653780826
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +559,7 @@ GameObject:
   - component: {fileID: 4016460428585933136}
   - component: {fileID: 972817350117639318}
   - component: {fileID: 1500488446860056601}
+  - component: {fileID: 8046448063211697886}
   - component: {fileID: 7784060575070838075}
   m_Layer: 5
   m_Name: MoneyTowerButton
@@ -641,6 +684,47 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DevKit.AudioManager, arvid-dev.dev-kit
+        m_MethodName: PlayOneShot
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ButtonClick
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8046448063211697886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008929034173283222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DevKit.AudioManager, arvid-dev.dev-kit
+          m_MethodName: PlayOneShot
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: ButtonHover
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &7784060575070838075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,6 +923,7 @@ GameObject:
   - component: {fileID: 4121992884073258124}
   - component: {fileID: 1618747684773688332}
   - component: {fileID: 4670545091717337897}
+  - component: {fileID: 7711557697306371820}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -961,6 +1046,47 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DevKit.AudioManager, arvid-dev.dev-kit
+        m_MethodName: PlayOneShot
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ButtonClick
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7711557697306371820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569624035573575316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DevKit.AudioManager, arvid-dev.dev-kit
+          m_MethodName: PlayOneShot
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: ButtonHover
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5333688344528996242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1677,7 @@ GameObject:
   - component: {fileID: 5465815076251250895}
   - component: {fileID: 5465815076251250888}
   - component: {fileID: 5465815076251250889}
+  - component: {fileID: 5877641788316696553}
   - component: {fileID: 5465815076251250894}
   m_Layer: 5
   m_Name: SimpleTowerButton
@@ -1675,6 +1802,47 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DevKit.AudioManager, arvid-dev.dev-kit
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ClickButton
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5877641788316696553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5465815076251250891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DevKit.AudioManager, arvid-dev.dev-kit
+          m_MethodName: PlayOneShot
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: HoverButton
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &5465815076251250894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1940,7 +2108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcfd032361829fd41a75e939b3b935ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toggleMover: {fileID: 0}
+  toggleMover: {fileID: 4348404927569545212}
 --- !u!114 &7650812272402851186
 MonoBehaviour:
   m_ObjectHideFlags: 0

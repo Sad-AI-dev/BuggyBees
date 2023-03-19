@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DevKit;
 
 public class MoneyTower : Tower
 {
@@ -11,5 +12,6 @@ public class MoneyTower : Tower
     protected override void Activate()
     {
         MoneyManager.instance.GainMoney(moneyToGenerate);
+        AudioManager.instance.PlayOneShot("Shoot");
     }
 }

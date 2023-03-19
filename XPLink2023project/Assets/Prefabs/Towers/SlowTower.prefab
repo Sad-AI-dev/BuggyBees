@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2126345968708767773}
   - component: {fileID: 4282521034026260990}
   - component: {fileID: 2126345968708767854}
+  - component: {fileID: -8898643174754473217}
   m_Layer: 0
   m_Name: SlowTower
   m_TagString: Tower
@@ -139,6 +140,33 @@ MonoBehaviour:
     attackSpeed: 10
   rangeShower: {fileID: 5899338931109363077, guid: cebf01142cab2fe4f9d37050ae6eaa98, type: 3}
   proj: {fileID: 6833184974460032831, guid: 8d6c5ab4233836543b04b50bd97391cc, type: 3}
+--- !u!114 &-8898643174754473217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126345968708767761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecaa5be5b59ce534c80cf2d1854198b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -2081355091103906000, guid: f8b79b31e92ec414fa9c34837096bc97, type: 3}
+        m_TargetAssemblyTypeName: OnStart, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PlaceTower
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5430391446110817013
 GameObject:
   m_ObjectHideFlags: 0

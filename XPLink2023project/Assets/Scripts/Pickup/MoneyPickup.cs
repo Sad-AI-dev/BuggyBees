@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DevKit;
 
 public class MoneyPickup : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class MoneyPickup : MonoBehaviour
     {
         if (!collision.isTrigger && collision.CompareTag("Player")) {
             MoneyManager.instance.GainMoney(value);
+            AudioManager.instance.PlayOneShot("PickUp");
             Destroy(gameObject);
         }
     }
