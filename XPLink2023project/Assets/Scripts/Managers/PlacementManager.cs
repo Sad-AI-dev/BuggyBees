@@ -46,7 +46,7 @@ public class PlacementManager : MonoBehaviour
                 //build tower
                 BuildTower();
             }
-            else if (Input.GetKeyDown(KeyCode.Escape)) {
+            else if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1)) {
                 RemoveSelected();
             }
         }
