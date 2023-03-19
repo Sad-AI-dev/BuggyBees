@@ -221,9 +221,9 @@ MonoBehaviour:
     price: 10
     range: 1
     damage: 0
-    attackSpeed: 6
+    attackSpeed: 15
   rangeShower: {fileID: 482981472835635611}
-  moneyToGenerate: 3
+  moneyToGenerate: 1
 --- !u!114 &-2081355091103906000
 MonoBehaviour:
   m_ObjectHideFlags: 0

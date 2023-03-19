@@ -15,7 +15,6 @@ public class MoneyTower : Tower
     {
         yield return new WaitForSeconds(60f / stats.attackSpeed);
         MoneyManager.instance.GainMoney(moneyToGenerate);
-        AudioManager.instance.PlayOneShot("Shoot");
         StartCoroutine(GenerateCo());
     }
 
