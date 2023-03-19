@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DevKit;
 
 public class UIManager : MonoBehaviour
 {
@@ -16,32 +17,10 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
 
     [Header("Refs")]
-    public GameObject contextPanel;
-    public GameObject buildPanel;
+    public UIToggleMover toggleMover;
     
-    //============= build panel =================
-    public void ShowBuildPanel()
+    public void ToggleVisibility()
     {
-        if (!contextPanel.activeSelf) {
-            ShowContextPanel();
-        }
-        buildPanel.SetActive(true);
-    }
-
-    public void HideBuildPanel()
-    {
-        buildPanel.SetActive(false);
-        contextPanel.SetActive(false);
-    }
-
-    //============ context panel ================
-    private void ShowContextPanel()
-    {
-        contextPanel.SetActive(true);
-    }
-
-    private void HideContextPanel()
-    {
-        contextPanel.SetActive(false);
+        toggleMover.StartMove();
     }
 }
