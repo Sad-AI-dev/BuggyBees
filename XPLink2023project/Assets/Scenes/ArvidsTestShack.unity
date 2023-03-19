@@ -469,7 +469,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.39
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -512,8 +512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35bc12ee3c758ca4c83988b1681a2d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
-  lookAheadMult: 1.5
+  moveSpeed: 1.5
+  lookAheadMult: 0.75
   playerbody: {fileID: 248296305}
 --- !u!1 &1915853910
 GameObject:
@@ -6257,10 +6257,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1927269163}
+    - target: {fileID: 5465815075207427466, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5465815076251250889, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1927269163}
+    - target: {fileID: 5465815076718332274, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5465815077080142200, guid: 240e837c470dd2541a8798f969e02e0f, type: 3}
       propertyPath: m_Name
       value: UI
