@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 248296306}
   - component: {fileID: 248296305}
   - component: {fileID: 248296304}
+  - component: {fileID: 248296310}
   - component: {fileID: 248296309}
   m_Layer: 0
   m_Name: Player
@@ -214,7 +215,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &248296306
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: -1746812347, guid: 3998aa58e21f83b48aa1eaea09a7c7ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -338,6 +339,18 @@ MonoBehaviour:
     - Horizontal
     yAxisCodes:
     - Vertical
+--- !u!114 &248296310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248296303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d43d9ac94c4b57c42bc8b67b7bdc2fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &750182228
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,7 +619,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 1
 --- !u!114 &2032077763
 MonoBehaviour:
   m_ObjectHideFlags: 0
