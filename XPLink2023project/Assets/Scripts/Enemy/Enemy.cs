@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour
     public class Stats {
         public float moveSpeed = 1f;
         public float damage = 1f;
-        public int heldMoney = 1;
     }
     public Stats stats;
     [SerializeField] private GameObject pickupDrop;
@@ -22,6 +21,7 @@ public class Enemy : MonoBehaviour
     private List<Transform> path;
     public int targetIndex { get; private set; }
 
+    [HideInInspector] public bool slowed = false;
     [HideInInspector] public Action<Enemy> onEnemyDestroy;
 
     private void Start()

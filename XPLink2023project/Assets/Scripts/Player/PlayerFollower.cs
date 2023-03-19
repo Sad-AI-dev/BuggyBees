@@ -17,11 +17,13 @@ public class PlayerFollower : MonoBehaviour
 
     private Camera cam;
     private float startZoom;
+    private Vector2 lastPlayerPos;
 
     private void Start()
     {
         cam = GetComponent<Camera>();
         startZoom = cam.orthographicSize;
+        lastPlayerPos = playerbody.position;
     }
 
     private void FixedUpdate()
@@ -32,12 +34,13 @@ public class PlayerFollower : MonoBehaviour
 
     private void Move()
     {
-        Vector3 targetPos = playerbody.position + (playerbody.velocity * lookAheadMult);
+        Vector2 targetPos = playerbody.position + ((playerbody.position - lastPlayerPos) * lookAheadMult);
         transform.position = Vector3.Lerp(transform.position, new Vector3 (targetPos.x, targetPos.y, transform.position.z), moveSpeed * Time.deltaTime);
         //adjust zoom
         if (cam.orthographicSize > startZoom) {
             cam.orthographicSize -= zoomSpeed * Time.deltaTime;
         }
+        lastPlayerPos = playerbody.position;
     }
     private void MoveToOverview()
     {

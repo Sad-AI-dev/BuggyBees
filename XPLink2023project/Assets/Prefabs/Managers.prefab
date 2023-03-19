@@ -1094,19 +1094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-    dictionary:
-    - key: 
-      value:
-        clip: {fileID: 0}
-        output: {fileID: 0}
-        priority: 128
-        volume: 0.3
-        pitch: 1
-        bypassEffects: 0
-        bypassListenerEffects: 0
-        bypassReverbZones: 0
-        source: {fileID: 0}
-        setBaseValues: 1
+    dictionary: []
 --- !u!1 &7677822078988500163
 GameObject:
   m_ObjectHideFlags: 0
