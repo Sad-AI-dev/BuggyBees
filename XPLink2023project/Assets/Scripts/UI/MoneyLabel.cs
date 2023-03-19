@@ -16,7 +16,7 @@ public class MoneyLabel : MonoBehaviour
 
     private void UpdateLabel(int money)
     {
-        label.text = "$" + money;
+        label.text = money.ToString();
     }
 
     private void OnDestroy()

@@ -24,6 +24,7 @@ public class BuildModeActivator : MonoBehaviour
         if (collision.CompareTag("Player") && !collision.isTrigger) {
             camMover.followPlayerMode = true;
             UIManager.instance.ToggleVisibility();
+            PlacementManager.instance.RemoveSelected();
         }
     }
 }
