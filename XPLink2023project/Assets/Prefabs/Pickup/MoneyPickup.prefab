@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeee9628547fac64eb18acc58b290088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 5
+  lifeTime: 10
   destroyOnLifeTimeEnd: 1
   onLifeTimeEnd:
     m_PersistentCalls:
